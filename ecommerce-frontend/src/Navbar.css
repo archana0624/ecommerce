@@ -1,0 +1,106 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #232f3e;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  color: #2C3E50;
+}
+
+.brand-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ee9f27;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-button {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #425c77;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+.cart-button {
+  background-color: #425c77;
+}
+
+.cart-button:hover {
+  background-color:#0056b3;
+}
+.user-initial {
+  width: 36px;
+  height: 36px;
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.user-initial {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 999;
+  border-radius: 5px;
+  width: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.dropdown-menu button {
+  background-color: #e31433;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
