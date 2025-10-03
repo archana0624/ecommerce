@@ -56,7 +56,7 @@ function Admin1() {
     try {
       const res = await axios.post(url, formData);
       if (res.data.status === "success") {
-        setMessage(editingId ? "Product updated" : "Product added");
+        setMessage(editingId ? "Medicine updated" : "Medicine added");
         setForm({ name: "", price: "", description: "", image: null });
         setEditingId(null);
         fetchProducts();
@@ -94,13 +94,13 @@ function Admin1() {
   return (
     <div className="admin-container">
       <div className="section-box">
-      <h2>{editingId ? "Update Product" : "Add New Product"}</h2>
+      <h2>{editingId ? "Update Medicine" : "Add New Medicine"}</h2>
       <form onSubmit={handleSubmit} encType="multipart/form-data">
-        <input type="text" name="name" placeholder="Product Name" value={form.name} onChange={handleChange} required />
+        <input type="text" name="name" placeholder="Medicine Name" value={form.name} onChange={handleChange} required />
         <input type="number" name="price" placeholder="Price" value={form.price} onChange={handleChange} required />
         <textarea name="description" placeholder="Description" value={form.description} onChange={handleChange} required />
         <input type="file" name="image" accept="image/*" onChange={handleChange} />
-        <button type="submit">{editingId ? "Update" : "Add Product"}</button>
+        <button type="submit">{editingId ? "Update" : "Add Medicine"}</button>
         <div style={{ marginBottom: "30px" }}></div>
       </form>
       <p>{message}</p>
@@ -110,7 +110,7 @@ function Admin1() {
       <h2>All Products</h2>
       <input
         type="text"
-        placeholder="Search by product name..."
+        placeholder="Search by Medicine name..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         className="search-input"

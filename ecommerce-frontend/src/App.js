@@ -34,18 +34,18 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <h2 className="brand-title">BuyNest:)</h2>
+        <h2 className="brand-title">MediCart</h2>
       </div>
 
       <div className="nav-links">
-        <Link to="/products" className="nav-button">Products</Link>
+        <Link to="/products" className="nav-button">Medicines</Link>
         <Link to="/admin-login" className="nav-button">Admin</Link>
 
         {user && (
-          <Link to="/orders" className="nav-button">My Orders</Link>
+          <Link to="/orders" className="nav-button">Orders</Link>
         )}
 
-        <Link to="/cart" className="nav-button cart-button">View Cart</Link>
+        <Link to="/cart" className="nav-button cart-button">Prescription Cart</Link>
 
         {userInitial ? (
           <div

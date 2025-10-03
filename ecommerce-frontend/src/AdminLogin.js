@@ -12,7 +12,7 @@ function AdminLogin() {
     e.preventDefault();
 
     // You can replace this with a backend request
-    if (email === "admin@buynest.com" && password === "admin123") {
+    if (email === "admin@medicart.com" && password === "admin123") {
       localStorage.setItem("adminLoggedIn", "true");
       navigate("/admin");
     } else {
@@ -22,7 +22,7 @@ function AdminLogin() {
 
   return (
     <div className="container">
-      <h1 className="brand">BuyNest </h1>
+      <h1 className="brand">MediCart</h1>
       <h2>Admin Login</h2>
       <form onSubmit={handleLogin}>
         <input

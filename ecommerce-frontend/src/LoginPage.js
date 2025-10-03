@@ -54,10 +54,20 @@ function LoginPage() {
       setMessage("Server error");
     }
   };
-
+  const backgroundStyle = {
+    minHeight: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundImage: "url('/background.jpg')", // 🔹 your image path
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
   return (
+    <div style={backgroundStyle}>
     <div className="container">
-      <h1 className="brand">BuyNest</h1>
+      <h1 className="brand">MediCart</h1>
       <h2>{isLogin ? "Login" : "Signup"}</h2>
       <form onSubmit={handleSubmit}>
         {!isLogin && (
@@ -92,7 +102,7 @@ function LoginPage() {
         </p>
       </form>
       <p className="message">{message}</p>
-    </div>
+    </div></div>
   );
 }
 

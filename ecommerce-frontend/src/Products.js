@@ -52,25 +52,15 @@ function Products() {
     // Save to localStorage
     localStorage.setItem(userCartKey, JSON.stringify(cart));
 
-    // Sync with backend
-    // try {
-    //   await axios.post("http://localhost/ecommerce-backend/updateCart.php", {
-    //     email: user.email,
-    //     cart: cart,
-    //   });
-    //   alert("✅ Product added to cart!");
-    // } catch (err) {
-    //   console.error("Failed to sync cart to server", err);
-    //   alert("❌ Error syncing cart to server");
-    // }
-    alert("Product added to cart!");
+   
+    alert("Medicine added to your cart!");
   };
 
   return (
     <div className="products-container">
       <input
         type="text"
-        placeholder="Search by product name..."
+        placeholder="Search by medicine name..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         className="product-search-input"
