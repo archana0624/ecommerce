@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 11, 2025 at 03:18 PM
+-- Generation Time: Oct 03, 2025 at 11:11 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -47,11 +47,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `user_email`, `customer_name`, `mobile`, `address`, `product_id`, `product_name`, `price`, `quantity`, `total_amount`, `image`, `order_date`) VALUES
-(1, '22i303@psgtech.ac.in', 'Archana', '6380442246', 'tvm', 6, 'iphone', 50000.00, 2, 100000.00, '1752208175_iphone1.webp', '2025-07-24 15:47:46'),
-(2, 'archanasivakumar200411@gmail.com', 'Archana', '6380442246', 'hacd', 5, 'I-phone', 120000.00, 1, 120000.00, '1752080969_iphone1.webp', '2025-07-29 16:34:40'),
-(3, '22i303@psgtech.ac.in', 'xyz', '6380442246', 'afyglfgv', 8, 'slippers', 10.00, 1, 10.00, '1753869076_slipper.jpg', '2025-07-30 09:51:59'),
-(4, '22i303@psgtech.ac.in', 'Archana', '6380442246', '422,school street, Nallavan palayam', 8, 'slippers', 10.00, 1, 10.00, '1753869076_slipper.jpg', '2025-08-16 09:22:35'),
-(5, 'john@gmail.com', 'john', '06380442246', '422, School Street, Nallavan Palayam', 7, 'layasa Women Slipper', 699.00, 1, 699.00, '1753865516_slipper.jpg', '2025-09-11 13:12:20');
+(1, 'archana@gmail.com', 'Archana', '6380442246', 'agfbalhfbdf', 16, 'Iron + Folic Acid Tablets', 150.00, 1, 150.00, '1759473207_iron+folic.avif', '2025-10-03 06:36:48');
 
 -- --------------------------------------------------------
 
@@ -72,13 +68,24 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `price`, `description`, `image`) VALUES
-(1, 'Sneakers', 3000.00, 'Comfortable and stylish daily wear', '1752071278_sneakers.webp'),
-(2, 'T-shirt', 399.00, 'Fierce Name Customized Printed Mens Half Sleeves Cotton T-Shirt', '1752080224_tshirt1.jpg'),
-(3, 'Tees', 599.00, 'Minimal Flowers Oversized Hip Hop Customized Printed Women Half Sleeves Cotton T-Shirt', '1752080513_w_tshirt1.jpg'),
-(4, 'Laptop', 49999.00, 'a portable personal computer with a screen, keyboard, and touchpad, designed for on-the-go use', '1752080559_laptop1.jpg'),
-(5, 'I-phone', 120000.00, 'iPhone 15 brings you Dynamic Island, a 48MP Main camera, and USB-C—all in a durable color-infused glass and aluminum design.', '1752080969_iphone1.webp'),
-(7, 'layasa Women Slipper', 699.00, 'Comfortable and elegant', '1753865516_slipper.jpg'),
-(8, 'slippers', 10.00, 'soft mayo', '1753869076_slipper.jpg');
+(1, 'Paracetamol 500mg', 35.00, 'Used for pain relief and fever reduction.', '1759472716_paracetamol-500mg-tablet.jpg'),
+(2, 'Ibuprofen 400mg', 55.00, 'Non-steroidal anti-inflammatory drug (NSAID) for pain, swelling, and fever.', '1759472750_ibuprofen-tablet-400mg-500x500.webp'),
+(3, 'Amoxicillin 500mg', 120.00, 'Antibiotic for bacterial infections.', '1759472780_Amoxicillin-500mg-caps-3-scaled.webp'),
+(4, 'Azithromycin 250mg', 135.00, 'Antibiotic commonly prescribed for throat and lung infections.', '1759472815_azith.jpg'),
+(5, 'Cetirizine 10mg', 25.00, 'Antihistamine for allergy relief.', '1759472838_cetirizine.png'),
+(6, 'Vitamin C Tablets', 150.00, 'Boosts immunity and acts as antioxidant.', '1759472870_vitamin c tablets.webp'),
+(7, 'Multivitamin Capsules', 220.00, 'General health supplement.', '1759472906_multi vitamin.jpg'),
+(8, 'Calcium + Vitamin D3', 180.00, 'Strengthens bones and joints.', '1759472926_cal_vitamind3.jpg'),
+(9, 'Metformin 500mg', 90.00, 'Used in diabetes management.', '1759472953_metformin.jpg'),
+(10, 'Glimepiride 2mg', 110.00, 'Oral diabetes medication.', '1759473016_glimepiride.webp'),
+(11, 'Amlodipine 5mg', 60.00, 'Calcium channel blocker for hypertension.', '1759473045_amlodipine.jpg'),
+(12, 'Pantoprazole 40mg', 95.00, 'Reduces stomach acid, used for GERD.', '1759473069_pantoprazole.jpg'),
+(13, 'Domperidone 10mg', 75.00, 'Used for nausea and vomiting.', '1759473131_domperidone.jpg'),
+(14, 'ORS Solution Pack', 30.00, 'Rehydration therapy for diarrhea.', '1759473157_ors.webp'),
+(15, 'Zinc Sulphate Tablets', 70.00, 'Supports immune system and recovery.', '1759473182_zinc.avif'),
+(16, 'Iron + Folic Acid Tablets', 150.00, 'Treats anemia and supports pregnancy health.', '1759473207_iron+folic.avif'),
+(17, 'Insulin Injection (10ml)', 350.00, 'Essential medicine for diabetes.', '1759473233_insulin.jpg'),
+(18, 'Betadine Antiseptic 100ml', 90.00, 'Used for wound cleaning and infection prevention.', '1759473250_betadine antiseptic.jpg');
 
 -- --------------------------------------------------------
 
@@ -99,17 +106,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
 (4, 'Archana', '22i303@psgtech.ac.in', '$2y$10$gcNBtGYAhMmz0uQQqGkKgufhABY3d/Q2PKZFYS453BtSrPpQWy.1C'),
-(5, 'xyz', 'archanasivakumar200411@gmail.com', '$2y$10$KTX13Cc5/v11maNtNFGOj.kHWFmQNc9zcUfQIv3PIfXrK0mfKmap.'),
-(6, 'abc', 'abc@gmail.com', '$2y$10$B8qSMuy5z84F6rFmXAMS1O7RWQ08g2GyNmUf2LtyBM/Hezsrq.OCS'),
-(7, 'Archana', 'archanabtechian@gmail.com', '$2y$10$8IW3qHZZ4kvhOg79kYoc1edNjVryrHkXKs.Lrbmqe.P06VBJ5eD0q'),
-(8, 'testuser', 'testuser@example.com', '$2y$10$WalFP1naPy7Hlg8sCcJ3F.J3VtFuUYSQvntbv/45diptPPcFrmpQi'),
-(9, 'Test User', 'testuser1@example.com', '$2y$10$u.BHcBK1.UET5TTYb2BlyuQzxVmxHMrx4wPL5N8NOoPXPOoAsJMV2'),
-(10, 'Test User', 'testuser2@example.com', '$2y$10$nFGdkvJ1wdPGc6ujEiLzF.VVbO6d9nEZW3FnRpVdrPiRnFqSRAgpy'),
-(11, 'Test User', 'testuser3@example.com', '$2y$10$c7vJr1xko.yaRI9SowwAielFb8R/eYVxYbkkgBT.dBNxsZhZ8srWm'),
-(12, 'Test User', 'testuser4@example.com', '$2y$10$sS2Pdwbbm0LzpF3r.sIRm.mHL8v75dnhJMx9vljH4EL3LX2yUU9KG'),
-(13, 'Test User', 'testuser5@example.com', '$2y$10$W/YaRXvpAOf95O6UFR/mSe1pYSKpntHuwlrXlDAfHJhUbFsaZxTVG'),
-(14, 'Test User', 'testuser6@example.com', '$2y$10$rarwxB7hPfvdfZkVjtbDzOMFFZC0IiGwfduBjQZ2xVYGnrllvFcme'),
-(15, 'john', 'john@gmail.com', '$2y$10$8kIjwlVmNF4BvD03yNjiOuctW/uOtHBBE84wnVIVQ67ZEct3NnV06');
+(16, 'John Doe', 'john.doe@example.com', '$2y$10$yYJKr5dDDIatzNd13pRHt.41XORk0zW8IVEoYEbX/hfmkUVRC6PN2'),
+(17, 'Archana', 'archana@gmail.com', '$2y$10$RnTEQHyV7u0AwNvGCASBouEsIQQ.LeEAGSUJMMJWzJpHXfw8HI//.');
 
 --
 -- Indexes for dumped tables
@@ -142,19 +140,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
